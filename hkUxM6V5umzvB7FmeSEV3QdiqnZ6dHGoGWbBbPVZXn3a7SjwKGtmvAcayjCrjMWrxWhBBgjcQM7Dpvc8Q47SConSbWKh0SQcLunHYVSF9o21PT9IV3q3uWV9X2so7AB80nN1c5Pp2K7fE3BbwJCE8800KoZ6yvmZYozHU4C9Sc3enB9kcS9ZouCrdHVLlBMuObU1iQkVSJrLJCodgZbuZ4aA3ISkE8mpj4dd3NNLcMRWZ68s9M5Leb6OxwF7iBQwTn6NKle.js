@@ -23,8 +23,6 @@ typeorm.createConnection({
   const repo = dbConnection.getRepository("Users")
   return repo
 }).then((repo) => {
-
-
   console.log('Seeding 2 users to MySQL users table: Liran (role: user), Simon (role: admin')
   const inserts = [
     repo.insert({
